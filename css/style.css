@@ -1,0 +1,394 @@
+@font-face {
+    font-family: 'Airbnb Cereal App';
+    src: url('AirbnbCerealApp-Black.woff2') format('woff2'),
+        url('AirbnbCerealApp-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Airbnb Cereal App';
+    src: url('AirbnbCerealApp-Bold.woff2') format('woff2'),
+        url('AirbnbCerealApp-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Airbnb Cereal App Extra';
+    src: url('AirbnbCerealApp-ExtraBold.woff2') format('woff2'),
+        url('AirbnbCerealApp-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Airbnb Cereal App Book';
+    src: url('AirbnbCerealApp-Book.woff2') format('woff2'),
+        url('AirbnbCerealApp-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Airbnb Cereal App';
+    src: url('AirbnbCerealApp-Light.woff2') format('woff2'),
+        url('AirbnbCerealApp-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'Airbnb Cereal App';
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.1;
+    background-color: #000000;
+    word-wrap: break-word;
+    font-size: 18px;
+}
+.container {
+    max-width: 1300px;
+}
+.image-background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0.9;
+    bottom: 0;
+    background-size: cover;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    background-position: center;
+    z-index: 3;
+  }
+  .main-video {
+    position: relative;
+  }
+  .video-background {
+    z-index: 1;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0b0b0b;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  .main-video video {
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+  }
+  .image-title {
+    position: absolute;
+    z-index: 8;
+    left: 0;
+    bottom: 25%;
+    width: 100%;
+  }
+  .T1{
+    color: #E22E46;
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  .T2{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  .T3{
+    color: #fff;
+    font-size: 23px;
+  }
+  .T4{
+    font-size: 28px;
+    border: 2px solid #E22E46;
+    padding: 10px 15px;
+    display: inline-block;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  .T5{
+    font-size: 23px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+  .serviceSection{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+padding: 90px 0px 20px 0px;
+  }
+  .serviceSection::before {
+    position: absolute;
+    content: '';
+    z-index: 3;
+    height: 53px;
+    top: -170px;
+    left: -100px;
+    border-bottom: 175px solid #000;
+    border-left: 2000px solid transparent;
+  }
+  main{
+    overflow-x: hidden;
+  }
+  header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 11;
+    padding: 20px 0px;
+    
+  }
+  .HeaderRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .HeaderRight ul{
+    list-style: none;
+    display: flex;
+  }
+  .HeaderRight ul li{}
+  .HeaderRight ul li a{
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+  }
+  .HeaderRight ul li a:hover,
+  .HeaderRight ul li a.active{
+    color: #E22E46;
+  }
+  .HeaderRight ul li a:hover::after,
+  .HeaderRight ul li a.active::after{
+    content: "";
+    width: 80%;
+    height: 3px;
+    background-color: #E22E46;
+    position: absolute;
+    left: 50%;
+    margin-left: -40%;
+    bottom: 0;
+  }
+  .LogoImg{
+    transition: 1s !important;
+  }
+  .darkHeader header{
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+  .darkHeader .LogoImg{
+    max-width: 90px;
+  }
+.T6{
+    color: #fff;
+font-size: 80px;
+font-weight: 900;
+margin-bottom: 20px;
+border:2px solid transparent;
+transition: 1s !important;
+display: inline-block;
+padding: 10px;
+cursor: crosshair;
+}
+.T6:hover,
+.T6.highlight{
+    border:2px solid #E22E46;
+    color: #E22E46;
+}
+.OurClients{
+    background-image: url(../images/brandbg.jpg);
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 210px 0px 40px 0px;
+  position: relative;
+  text-align: center;
+}
+.OurClients::after{
+    content: "";
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.OurClients::before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 53px;
+    top: -1px;
+    z-index: 2;
+    border-top: 175px solid #000;
+    border-right: 2500px solid transparent;
+    left: 0;
+  }
+  .Ct1{
+    font-size: 28px;
+border: 2px solid #E22E46;
+padding: 10px 15px;
+display: inline-block;
+text-transform: capitalize;
+margin-bottom: 50px;
+color:#fff;
+  }
+  .Clt2{
+    position: relative;
+    z-index: 5;
+  }
+  .clients{
+    overflow: hidden;
+  }
+  .clients .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .clients .row img{
+    max-width: 100%;
+  }
+  .BookNowBox{
+    background-image: url(../images/bookbg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 60px 0px;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .BookNowBox::after{
+    content: "";
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  .BkNw1{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  .BkContentWrap{
+    position: relative;
+    z-index: 1;
+  }
+  .BkNw2{
+    background-color: #E22E46;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff !important;
+    font-weight: bold;
+    text-decoration: none !important;
+  }
+  .TimeLine{
+    color: #fff;
+    position: relative;
+    padding: 100px 0px;
+    text-align: center;
+  }
+  .TimeLine::before {
+    position: absolute;
+    content: '';
+    z-index: 3;
+    height: 53px;
+    top: -170px;
+    left: -100px;
+    border-bottom: 175px solid #000;
+    border-left: 2000px solid transparent;
+  }
+  .TimeLine1{
+    font-size: 28px;
+    border: 2px solid #E22E46;
+    padding: 10px 15px;
+    display: inline-block;
+    text-transform: capitalize;
+    margin-bottom: 70px;
+    color: #fff;
+  }
+  .GridBx1{
+    text-align: left;
+  }
+  .GridBx1T1{
+    color: #fff;
+font-size: 55px;
+font-weight: 900;
+margin-bottom: 10px;
+  }
+  .GridBx1T2{
+color: #E22E46;
+font-size: 25px;
+padding-left: 50px;
+margin-bottom: 15px;
+position: relative;
+  }
+  .timeline1::before{
+    content: "";
+    background-image: url(../images/timeline1.png);
+    width: 35px;
+    height: 30px;
+    background-size: 100% 100%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+  }
+  .timeline2::before{
+    content: "";
+    background-image: url(../images/timeline2.png);
+    width: 35px;
+    height: 30px;
+    background-size: 100% 100%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+  }
+  .timeline3::before{
+    content: "";
+    background-image: url(../images/timeline3.png);
+    width: 35px;
+    height: 30px;
+    background-size: 100% 100%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+  }
+  .GridBx1T3{
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+  .GridBx1T4{
+  color: #E22E46;
+  font-size: 25px;
+  }
