@@ -81,6 +81,15 @@ $(function() {
         $('html, body').animate({
             scrollTop: $('#'+anchor).offset().top - 80
         }, 500);
+    });
+    $(document).on('click', '.GoLink1', function (e) {
+        e.preventDefault();
+        var anchor = $(this).attr('data-go');
+        $(".GoLink").removeClass("active");
+        $(this).addClass("active");
+        $('html, body').animate({
+            scrollTop: $('#'+anchor).offset().top - 80
+        }, 500);
         $("body").toggleClass("ActivePanel");
     });
     $(document).on('click', '.BkNw2', function (e) {
