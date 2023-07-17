@@ -595,22 +595,22 @@ margin-bottom: 10px;
   box-shadow: none;
   outline: none;
   border-bottom: 1px solid #fff;
-  background-color: #E22E46;
+  background-color: #E22E46 !important;
   margin-bottom: 20px;
   width: 100%;
-  color: #fff;
+  color: #fff !important;
 }
 .formElements ::placeholder {
-  color: #fff;
+  color: #fff !important;
   opacity: 1; /* Firefox */
 }
 
 .formElements :-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: #fff;
+ color: #fff !important;
 }
 
 .formElements ::-ms-input-placeholder { /* Microsoft Edge */
- color: #fff;
+ color: #fff !important;
 }
 .formElements p{
   margin-bottom: 0 !important;
@@ -621,7 +621,7 @@ margin-bottom: 10px;
 .formElements input.SubmitBtn , .formElements input.wpcf7-submit{
   margin: 0;
   display: inline-block;
-  background-color: #fff;
+  background-color: #fff !important;
   padding: 12px;
   width: auto;
   min-width: 210px;
@@ -629,7 +629,7 @@ margin-bottom: 10px;
   font-weight: bold;
   cursor: pointer;
   margin-top: 20px;
-  color: #000;
+  color: #000 !important;
 }
 .fancybox-bg{
   background-color: #000 !important;
