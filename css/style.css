@@ -42,7 +42,10 @@
   font-style: normal;
   font-display: swap;
 }
-
+a{
+  outline: none !important;
+  box-shadow: none !important;
+}
 body {
   font-family: 'Airbnb Cereal App';
   font-weight: 300;
