@@ -893,7 +893,8 @@ body{
   line-height: 1.2;
 }
 .FtrLogo {
-  display: none;
+  display: none !important;
+  
 }
 .formElements input {
   padding: 10px 0px;
