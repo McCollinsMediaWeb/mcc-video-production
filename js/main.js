@@ -89,7 +89,12 @@ $(function() {
             scrollTop: $('#footer').offset().top - 80
         }, 500);
     });
-    
+    $(document).on('click', '.mediaFlex1', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $('#footer').offset().top - 80
+        }, 500);
+    });
     $(document).on('click', '.MenuClick', function (e) {
         e.preventDefault();
         $("body").toggleClass("ActivePanel");
