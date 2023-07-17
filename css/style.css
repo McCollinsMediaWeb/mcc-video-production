@@ -612,7 +612,13 @@ margin-bottom: 10px;
 .formElements ::-ms-input-placeholder { /* Microsoft Edge */
  color: #fff;
 }
-.formElements input.SubmitBtn{
+.formElements p{
+  margin-bottom: 0 !important;
+}
+.formElements br{
+  display: none !important;
+}
+.formElements input.SubmitBtn , .formElements input.wpcf7-submit{
   margin: 0;
   display: inline-block;
   background-color: #fff;
