@@ -858,15 +858,15 @@ display: none;
   color: #fff;
 }
 .HeaderForm{
-  padding: 20px;
+  padding: 30px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.4);
   position: relative;
   min-height: 250px;
 }
 .Hicon1{
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background-image: url(../images/icon1.png);
   background-size: 100% 100%;
   position: absolute;
@@ -875,8 +875,8 @@ display: none;
   transform: rotate(180deg);
 }
 .Hicon2{
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background-image: url(../images/icon1.png);
   background-size: 100% 100%;
   position: absolute;
@@ -885,8 +885,8 @@ display: none;
   transform: rotate(270deg);
 }
 .Hicon3{
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background-image: url(../images/icon1.png);
   background-size: 100% 100%;
   position: absolute;
@@ -895,8 +895,8 @@ display: none;
   transform: rotate(90deg);
 }
 .Hicon4{
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background-image: url(../images/icon1.png);
   background-size: 100% 100%;
   position: absolute;
