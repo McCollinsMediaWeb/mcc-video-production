@@ -108,7 +108,28 @@ $(function() {
         e.preventDefault();
         $("body").toggleClass("ActivePanel");
     });
-
+    jQuery(".popup2-trigger").click(function () {
+        jQuery("body").toggleClass("Popup2active");
+        jQuery(".p2HeadText").text($(this).text());
+        jQuery(".p2mainContent").text($(this).next("span").text());
+      });
+      jQuery(".popup2-trigger-1").click(function () {
+        jQuery("body").toggleClass("Popup2active");
+        jQuery(".p2HeadText").text($(this).prev("div").text());
+        jQuery(".p2mainContent").text($(this).next("span").text());
+      });
+      jQuery(".OverLay2").click(function () {
+        jQuery("body").toggleClass("Popup2active");
+        jQuery(".p2HeadText").text("Read More Content Looking Empty");
+        jQuery(".p2mainContent").text($(this).data("Please click on any Read More Button"));
+      });
+      jQuery(".cta1").click(function () {
+        jQuery("body").toggleClass("Popup2active");
+        $('html, body').animate({
+            scrollTop: $('#footer').offset().top - 80
+        }, 500);
+      });
+      
     
 
 });

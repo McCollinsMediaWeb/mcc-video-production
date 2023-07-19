@@ -170,7 +170,7 @@ body {
 }
 .Popup2 {
   padding: 30px;
-  background-color: #97C6CA;
+  background-color: #000;
   position: fixed;
   bottom: -200%;
   left: 50%;
@@ -182,7 +182,37 @@ body {
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
   transition: 00.4s;
-  border: 2px solid #fff;
+  border: 2px solid #E22E46;
+  color: #fff;
+  text-align: center;
+}
+.cta1{
+  background-color: #E22E46;
+display: inline-block;
+padding: 10px 20px;
+color: #fff !important;
+font-weight: bold;
+text-decoration: none !important;
+font-size: 25px;
+}
+.p2HeadText {
+  font-weight: 900;
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+.p2mainContent {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  font-style: italic;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  line-height: 1.4;
 }
 .Popup2active .Popup2 {
   bottom: 0;
@@ -276,7 +306,7 @@ header {
   transition: 1s !important;
   display: inline-block;
   padding: 10px;
-  cursor: crosshair;
+  cursor: pointer;
 }
 
 .T6:hover,
