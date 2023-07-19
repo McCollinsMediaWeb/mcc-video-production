@@ -904,6 +904,13 @@ display: none;
   bottom: 0;
 }
 @media all and (max-width: 800px) {
+  .Popup2 {
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
   .HeaderForm{
     display: none;
   }
