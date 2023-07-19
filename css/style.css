@@ -1059,7 +1059,7 @@ body{
   
 }
 .formElements input ,.formElements select {
-  padding: 10px 0px;
+  padding: 10px 0px !important;
 }
 }
 
