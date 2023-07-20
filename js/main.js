@@ -132,7 +132,7 @@ $(function() {
       $('.loop1').owlCarousel({
         center: true,
         items:1,
-        dots:false,
+        dots:true,
         loop:true,
         autoHeight:true,
         margin:10,

@@ -902,7 +902,30 @@ display: none;
   right: 0;
   bottom: 0;
 }
+.owl-dots{
+  margin-top: 20px;
+}
+.owl-carousel button.owl-dot{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.owl-carousel button.owl-dot.active{
+  background-color: #E22E46;
+  width: 25px;
+  height: 25px;
+}
 @media all and (max-width: 800px) {
+  .owl-carousel button.owl-dot{
+    width: 14px;
+    height: 14px;
+  }
+  .owl-carousel button.owl-dot.active{
+    width: 18px;
+    height: 18px;
+  }
   .Popup2 {
     left: 0;
     width: 100%;
