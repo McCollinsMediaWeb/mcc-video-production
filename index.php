@@ -1,0 +1,554 @@
+  
+  <?php /* Template Name:homepage */ ?>
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package mccv
+ */
+
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="utf-8" />
+    <meta name="msapplication-TileColor" content="#E22D46" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#E22D46" />
+    <meta name="msapplication-navbutton-color" content="#E22D46" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <?php wp_head(); ?>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="https://mccollinsmediaweb.github.io/mcc-video-production/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://mccollinsmediaweb.github.io/mcc-video-production/css/aos.css" />
+    <link rel="stylesheet" href="https://mccollinsmediaweb.github.io/mcc-video-production/css/master.css" />
+    <link href="https://mccollinsmediaweb.github.io/mcc-video-production/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://mccollinsmediaweb.github.io/mcc-video-production/css/style.css?v5" />
+    <title>McCollins Media Production</title>
+    <style>
+        .formElements input{
+  padding: 10px;
+  border: 0px solid #e4e4e4;
+  box-shadow: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  background-color: #E22E46 !important;
+  margin-bottom: 20px;
+  width: 100%;
+  color: #fff !important;
+}
+.formElements ::placeholder {
+  color: #fff !important;
+  opacity: 1; /* Firefox */
+}
+
+.formElements :-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #fff !important;
+}
+
+.formElements ::-ms-input-placeholder { /* Microsoft Edge */
+ color: #fff !important;
+}
+.formElements p{
+  margin-bottom: 0 !important;
+}
+.formElements br{
+  display: none !important;
+}
+.formElements input.SubmitBtn , .formElements input.wpcf7-submit{
+  margin: 0;
+  display: inline-block;
+  background-color: #fff !important;
+  padding: 12px;
+  width: auto;
+  min-width: 210px;
+  line-height: 1;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  color: #000 !important;
+}
+footer a{
+    color:#fff !important;
+}
+    </style>
+</head>
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <div class="HeaderRow">
+            <div class="HeaderLeft ">
+              <img src="https://mccollinsmediaweb.github.io/mcc-video-production/images/logo.png" class="LogoImg" />
+            </div>
+            <div class="HeaderRight">
+              <ul>
+                <li>
+                  <a href="#home" data-go="home" class="GoLink active">Home</a>
+                </li>
+                <li>
+                  <a href="#ourservice" data-go="ourservice" class="GoLink">Our Services</a>
+                </li>
+                <li>
+                  <a href="#ourclients" data-go="ourclients" class="GoLink">Our Clients</a>
+                </li>
+                <li>
+                    <a href="#timeline" data-go="timeline" class="GoLink">Our Timeline</a>
+                  </li>
+                <li>
+                  <a href="#ourworks" data-go="ourworks" class="GoLink">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#footer" data-go="footer" class="GoLink">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="MobileOnly">
+              <div class="MenuClick">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256"
+style="fill:#ffffff;">
+<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M3,7c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,14c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,21c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587z"></path></g></g>
+</svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="HeroSection" id="home">
+        <div class="main-video">
+          <div class="image-background"></div>
+          <div class="image-title">
+            <div class="container">
+              <div class="T1" data-aos="fade-up" data-aos-duration="700">
+                VIDEO STORYTELLING FOR TECH MARKETING
+              </div>
+              <div class="T2" data-aos="fade-left" data-aos-duration="700">
+                Tell better stories
+              </div>
+              <div class="T3" data-aos="fade-right" data-aos-duration="700">
+                In a world of repetitive and dull B2B tech content, be the
+                marketer<br />
+                that tells stories your audience actually cares about.
+              </div>
+            </div>
+          </div>
+          <div class="video-background">
+            <video autoplay="" muted="" loop="" id="myVideo" playsinline>
+              <source src="https://mccollinsmediaweb.github.io/mcc-video-production/images/mccollins-media-video-compressed.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+      <section class="serviceSection" id="ourservice">
+        <div class="container">
+          <div class="text-center">
+            <div class="T4" data-aos="fade-up" data-aos-duration="700">
+              Our Services
+            </div>
+            <div class="T5" data-aos="fade-up" data-aos-duration="700">
+              We deliver anything and everything that has to<br />
+              do with video productions, photography, animations, and beyond.
+            </div>
+            <div>
+              <div class="T6" data-aos="fade-up" data-aos-duration="700">
+                Video Production
+              </div>
+            </div>
+            <div>
+              <div
+                class="T6 highlight"
+                data-aos="fade-up"
+                data-aos-duration="700"
+              >
+                Image Production
+              </div>
+            </div>
+            <div>
+              <div class="T6" data-aos="fade-up" data-aos-duration="700">
+                3D & VFX
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="OurClients" id="ourclients">
+        <div class="container">
+          <div class="Clt2">
+            <div class="Ct1" data-aos="fade-left" data-aos-duration="700">
+              Our Clients
+            </div>
+            <div class="clients">
+              <div class="row">
+                <div class="col-md-2">
+                  <img
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/1.png"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/2.png"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/3.png"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/4.png"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/5.png"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/6.png"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    data-aos="fade-left"
+                    data-aos-duration="700"
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/7.png"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    data-aos="fade-left"
+                    data-aos-duration="700"
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/8.png"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    data-aos="fade-left"
+                    data-aos-duration="700"
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/9.png"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    data-aos="fade-left"
+                    data-aos-duration="700"
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/10.png"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    data-aos="fade-left"
+                    data-aos-duration="700"
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/11.png"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <img
+                    data-aos="fade-left"
+                    data-aos-duration="700"
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/clients/12.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="BookNowBox">
+        <div class="container">
+          <div class="BkContentWrap">
+            <div class="BkNw1" data-aos="fade-up" data-aos-duration="700">
+              Schedule Your Shoot
+            </div>
+            <a
+              href="#footer"
+              class="BkNw2"
+              data-aos="fade-left"
+              data-aos-duration="700"
+              >Book Now</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="TimeLine" id="timeline">
+        <div class="container">
+          <div class="TimeLine1" data-aos="fade-up" data-aos-duration="700">
+            Our Timeline
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="GridBx1" data-aos="fade-left" data-aos-duration="700">
+                <div class="GridBx1T1">1.Start</div>
+                <div class="GridBx1T2 timeline1">Pre Production</div>
+                <div class="GridBx1T3">
+                  Once you submit the brief and confirm the project with us, our
+                  team of account directors will do the rest. Plan, strategize,
+                  set deadlines, and moderate every task from script to finish.
+                </div>
+                <div class="GridBx1T4">Timeline : 2-3 Days</div>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="700">
+              <div class="GridBx1">
+                <div class="GridBx1T1">2.Collab</div>
+                <div class="GridBx1T2 timeline2">Production</div>
+                <div class="GridBx1T3">
+                  Once we finish the pre-production stage according to the
+                  approved plan, we proceed to shoot. Our crew will make sure
+                  that we have a seamless journey throughout the shoot days.
+                </div>
+                <div class="GridBx1T4">Timeline : 1-2 Days</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="GridBx1"
+                data-aos="fade-right"
+                data-aos-duration="700"
+              >
+                <div class="GridBx1T1">3.Approve</div>
+                <div class="GridBx1T2 timeline3">Post - Production</div>
+                <div class="GridBx1T3">
+                  Share your feedback using our technology, which allows you to
+                  add comments directly on the video with real-time playback
+                  along with your colleagues anywhere in the world, creating
+                  faster approvals.
+                </div>
+                <div class="GridBx1T4">Timeline : 3-5 Days</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ourWorks" id="ourworks">
+        <div class="container">
+          <div class="WrkT1">Our Works</div>
+          <div class="PortFolioBlock">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="PrBlock" data-aos="fade-up" data-aos-duration="700">
+                  <img
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work1.jpg"
+                  />
+                  <div class="PrBlockContent">
+                    <div>
+                      <div class="PrT1">Film Production</div>
+                      <a href="javascript:void(0)" class="PrT2 Port1">
+                        Portfolio
+                      </a>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="PrBlock" data-aos="fade-up" data-aos-duration="700">
+                  <img
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work2.jpg"
+                  />
+                  <div class="PrBlockContent">
+                    <div>
+                      <div class="PrT1">Lifestyle Photography</div>
+                      <a href="javascript:void(0)" class="PrT2 Port2">Portfolio</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="PrBlock" data-aos="fade-up" data-aos-duration="700">
+                  <img
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work3.jpg"
+                  />
+                  <div class="PrBlockContent">
+                    <div>
+                      <div class="PrT1">Food Photography</div>
+                      <a href="javascript:void(0)" class="PrT2 Port3">Portfolio</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="PrBlock" data-aos="fade-up" data-aos-duration="700">
+                  <img
+                    class="ImageSwitcher"
+                    src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png"
+                    data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/work4.jpg"
+                  />
+                  <div class="PrBlockContent">
+                    <div>
+                      <div class="PrT1">Corporate Videos</div>
+                      <a href="javascript:void(0)" class="PrT2 Port4">Portfolio</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="d-none">
+      <div class="portfolio1">
+        <a href="https://youtu.be/eK6SzU776KY" data-fancybox="portfolio1" title="Client Name">Ijas</a>
+        <a href="https://youtu.be/eK6SzU776KY" data-fancybox="portfolio1" title="Client Name">Ijas</a>
+        <a href="https://youtu.be/eK6SzU776KY" data-fancybox="portfolio1" title="Client Name">Ijas</a>
+        <a href="https://youtu.be/eK6SzU776KY" data-fancybox="portfolio1" title="Client Name">Ijas</a>
+      </div>
+      <div class="portfolio2">
+        <a href="https://mccollinsmediaweb.github.io/mcc-video-production/images/work1.jpg" data-fancybox="portfolio2">Ijas</a>
+        <a href="https://mccollinsmediaweb.github.io/mcc-video-production/images/work2.jpg" data-fancybox="portfolio2">Ijas</a>
+        <a href="https://mccollinsmediaweb.github.io/mcc-video-production/images/work3.jpg" data-fancybox="portfolio2">Ijas</a>
+        <a href="https://mccollinsmediaweb.github.io/mcc-video-production/images/work4.jpg" data-fancybox="portfolio2">Ijas</a>
+      </div>
+      <div class="portfolio3">
+        <a href="https://mccollinsmediaweb.github.io/mcc-video-production/images/work1.jpg" data-fancybox="portfolio3">Ijas</a>
+        <a href="https://mccollinsmediaweb.github.io/mcc-video-production/images/work2.jpg" data-fancybox="portfolio3">Ijas</a>
+        <a href="https://mccollinsmediaweb.github.io/mcc-video-production/images/work3.jpg" data-fancybox="portfolio3">Ijas</a>
+        <a href="https://mccollinsmediaweb.github.io/mcc-video-production/images/work4.jpg" data-fancybox="portfolio3">Ijas</a>
+        <a href="https://youtu.be/eK6SzU776KY" data-fancybox="portfolio3">Ijas</a>
+      </div>
+      <div class="portfolio4">
+        <a href="https://youtu.be/eK6SzU776KY" data-fancybox="portfolio4">Ijas</a>
+        <a href="https://youtu.be/eK6SzU776KY" data-fancybox="portfolio4">Ijas</a>
+        <a href="https://youtu.be/eK6SzU776KY" data-fancybox="portfolio4">Ijas</a>
+        <a href="https://youtu.be/eK6SzU776KY" data-fancybox="portfolio4">Ijas</a>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="ft1">READY TO DO THIS</div>
+            <div class="ft2">
+              Let’s get<br />
+              to work
+            </div>
+            <div class="ft3">
+              <span>Our Address</span> G04, Loft Office 2,<br/> Entrance C, Dubai Media City
+            </div>
+            <div class="ft4">
+              <div><span>Phone&nbsp;:</span>&nbsp;+971 4 445 6848</div>
+              <div><span>Email&nbsp;:</span>&nbsp; info@mccproduction.com</div>
+            </div>
+            <img src="https://mccollinsmediaweb.github.io/mcc-video-production/images/lazy.png" data-src="https://mccollinsmediaweb.github.io/mcc-video-production/images/footerlogo.png" class="FtrLogo ImageSwitcher"/>
+          </div>
+          <div class="col-md-6">
+            <div class="contactForm">
+            <?php echo do_shortcode('[contact-form-7 id="8" title="Untitled"]'); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="menudrop MenuClick">&nbsp;</div>
+    <div class="SideNav">
+      <div class="SideNavContent">
+        <span class="CloseClick">
+          <span class="CloseBtn1 MenuClick">&nbsp;</span>
+        </span>
+        <div class="NavBox">
+            <a href="#home" data-go="home" class="GoLink1">Home</a>
+            <a href="#ourservice" data-go="ourservice" class="GoLink1">Our Services</a>
+            <a href="#ourclients" data-go="ourclients" class="GoLink1">Our Clients</a>
+            <a href="#timeline" data-go="timeline" class="GoLink1">Our Timeline</a>
+            <a href="#ourworks" data-go="ourworks" class="GoLink1">Portfolio</a>
+            <a href="#footer" data-go="footer" class="GoLink1">Contact</a>
+        </div>
+        <div>
+          <div class="SocialMedia">
+            <a href="#" target="_blank">
+              <img src="https://mccollinsmediaweb.github.io/mcc-video-production/images/instagram.png">
+            </a>
+            <a href="#" target="_blank">
+              <img src="https://mccollinsmediaweb.github.io/mcc-video-production/images/facebook.png">
+            </a>
+            <a href="#" target="_blank">
+              <img src="https://mccollinsmediaweb.github.io/mcc-video-production/images/linkedin.png">
+            </a>
+            <a href="#" target="_blank">
+              <img src="https://mccollinsmediaweb.github.io/mcc-video-production/images/twitter.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="FooterMediaIcons">
+      <div>
+        <div class="mediaFlex">
+          <a href="#footer" class="mediaFlex1">Get a quote</a>
+          <a href="#" class="mediaFlex2">WhatsApp us</a>
+        </div>
+      </div>
+    </div>
+    <script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/aos.js"></script>
+    <script>
+      AOS.init({disable: 'mobile'});
+    </script>
+    <script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/jquery.js"></script>
+    <script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/jquery.fancybox.min.js"></script>
+    <script src="https://mccollinsmediaweb.github.io/mcc-video-production/js/main.js?v=5"></script>
+
+    <!-- T8y#V@e7@TZWT -->
+<?php wp_footer(); ?>
+ 
+  </body>
+  
+</html>
