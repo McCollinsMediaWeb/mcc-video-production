@@ -131,10 +131,10 @@ $(function() {
       });
       $('.loop1').owlCarousel({
         center: true,
-        items:3,
+        items:1,
         dots:false,
         loop:true,
-        lazyLoad: true,
+        autoHeight:true,
         margin:10,
         responsive:{
             600:{

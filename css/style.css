@@ -528,7 +528,6 @@ header {
   background-size: cover;
   position: relative;
   padding: 250px 0px 180px 0px;
-  min-height: 600px;
 }
 
 .ourWorks::before {
@@ -572,7 +571,7 @@ header {
   width: 100%;
 }
 .PrBlock{
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   position: relative;
 }
 .PrBlock::after{
