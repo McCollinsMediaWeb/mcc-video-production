@@ -129,6 +129,19 @@ $(function() {
             scrollTop: $('#footer').offset().top - 80
         }, 500);
       });
+      $('.loop1').owlCarousel({
+        center: true,
+        items:3,
+        dots:false,
+        loop:true,
+        lazyLoad: true,
+        margin:10,
+        responsive:{
+            600:{
+                items:2
+            }
+        }
+    });
       
     
 
